@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 import yaml
 
 from .attack_args import AttackArgs
+from .targeted_attack_args import TargetedAttackArgs
 from .evaluation_args import EvaluationArgs
 from .trainer_args import TrainerArgs
 from .dataset_args import DatasetArgs
@@ -38,6 +39,7 @@ class ConfigArgs:
         NERArgs.CONFIG_KEY: NERArgs(),
         PrivacyArgs.CONFIG_KEY: PrivacyArgs(),
         AttackArgs.CONFIG_KEY: AttackArgs(),
+        TargetedAttackArgs.CONFIG_KEY: TargetedAttackArgs(),
         EvaluationArgs.CONFIG_KEY: EvaluationArgs()
     }
 
@@ -67,6 +69,9 @@ class ConfigArgs:
 
     def get_attack_args(self) -> AttackArgs:
         return self.args_to_config[AttackArgs.CONFIG_KEY]
+    
+    def get_targeted_attack_args(self) -> TargetedAttackArgs:
+        return self.args_to_config[TargetedAttackArgs.CONFIG_KEY]
 
     def get_trainer_args(self) -> TrainerArgs:
         """ Gets the trainer args. Output directory is always from output dir"""

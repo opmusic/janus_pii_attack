@@ -13,13 +13,13 @@
 </p>
 
 This repository contains the official code for our ACM CCS 2024 paper using GPT-2 language models and
-Flair Named Entity Recognition (NER) models. It is built upon the github repo: https://github.com/microsoft/analysing_pii_leakage and supports our proposed noval targeted privacy attack -- Janus attack.
+Flair Named Entity Recognition (NER) models. It is built upon the github repo: https://github.com/microsoft/analysing_pii_leakage and supports our proposed targeted privacy attack -- Janus attack.
 
 
 ## Publication
 
 > **The Janus Interface: How Fine-Tuning in Large Language Models Amplifies the Privacy Risks.**
-> Xiaoyi Chen and Siyuan Tang and Rui Zhu (equal contribution), Shijun Yan, Lei Jin, Zihao Wang, Liya Su, Zhikun Zhang, XiaoFeng Wang, Haixu Tang
+> Xiaoyi Chen and Siyuan Tang and Rui Zhu (equal contribution), Shijun Yan, Lei Jin, Zihao Wang, Liya Su, Zhikun Zhang, XiaoFeng Wang, Haixu Tang.
 > ACM Conference on Computer and Communications Security (CCS'24). Salt Lake City, USA.
 >
 > [![arXiv](https://img.shields.io/badge/arXiv-2310.15469-green)](https://arxiv.org/abs/2310.15469)
@@ -63,7 +63,7 @@ $ python janus_attack.py --config_path ../configs/targted-attack/echr-gpt2-janus
 
 ## Evaluation
 
-Edit the ```model_ckpt``` attribute in the ```../configs/targted-attack/echr-gpt2-janus-eval.yml``` file to point to the location of the model  model.
+Edit the ```model_ckpt``` attribute in the ```../configs/targted-attack/echr-gpt2-janus-eval.yml``` file to point to the location of the model you want to evaluate.
 
 ```shell
 $ python evaluate.py --config_path ../configs/targted-attack/echr-gpt2-janus-eval.yml

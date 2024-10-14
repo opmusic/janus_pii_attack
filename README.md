@@ -40,12 +40,12 @@ We explain the following functions. The scripts are in the ```./examples``` fold
 run configurations are in the ```./configs``` folder.
 * **Pretrain**: Simulate the pretraining process of language models through continual learning.
 * **Attack**: Implement the Janus attack on the languagee models
-* **Evaluation**: Implement the Janus attack on the languagee models
+* **Evaluation**: Implement the Janus attack on the language models
 
 
-## Pretraining
+## Pretrain
 
-We demonstrate how to simulate the pretraining of ```GPT-2``` ([Huggingface](https://huggingface.co/gpt2)) models on the [ECHR](https://huggingface.co/datasets/ecthr_cases) dataset and [WikiText](https://huggingface.co/datasets/Salesforce/wikitext).
+We demonstrate how to simulate the pretraining of ```GPT-2``` ([Huggingface](https://huggingface.co/gpt2)) models on the [ECHR](https://huggingface.co/datasets/ecthr_cases) and [WikiText](https://huggingface.co/datasets/Salesforce/wikitext) datasets.
 
 Edit your own path for the original model and saved pretrained model in the ```../configs/targted-attack/echr-gpt2-janus-pretrain.yml``` The default output folder is your current folder.
 
